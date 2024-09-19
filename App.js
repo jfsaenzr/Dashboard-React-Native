@@ -132,7 +132,7 @@ const renderLegendComponent = () => {
 const data = [
   { left: 64, right: 23 },
   { left: 35, right: 48 },
-  { left: 15, right: 39 },
+  { left: 57, right: 39 },
   { left: 75, right: 68 },
 ];
 
@@ -368,7 +368,7 @@ const styles = StyleSheet.create({
   chartContainer: {
     flex: 1,
     borderRadius: 10,
-    borderWidth: 0.5,
+    borderWidth: 0.8,
     borderColor: "lightgrey",
     padding: 10,
     margin: 10,
