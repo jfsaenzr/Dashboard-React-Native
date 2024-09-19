@@ -162,9 +162,9 @@ export default function App() {
             color: "#414141",
             fontSize: 30,
             fontWeight: "bold",
-            marginBottom: 12,
+            marginBottom: 5,
             textAlign: "center",
-            textDecorationLine: "underline",
+            //textDecorationLine: "underline",
           }}
         >
           Gifted Charts
