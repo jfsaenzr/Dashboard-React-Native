@@ -51,22 +51,6 @@ export default function App() {
       <SafeAreaView style={styles.container}>
         <ScrollView>
           <Text style={styles.titulo}>Graficas</Text>
-
-          <LineChart
-            data={data}
-            width={380}
-            height={250}
-            verticalLabelRotation={30}
-            chartConfig={chartConfig}
-            bezier
-            style={{
-              margin: 5,
-              borderRadius: 16,
-              stroke: "#ccc",
-              borderWidth: 1,
-              backgroundColor: "#fff",
-            }}
-          />
         </ScrollView>
       </SafeAreaView>
     </View>
