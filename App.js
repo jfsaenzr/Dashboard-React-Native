@@ -55,17 +55,8 @@ export default function App() {
           <LineChart
             data={data}
             width={380}
-            height={250}
-            verticalLabelRotation={30}
+            height={220}
             chartConfig={chartConfig}
-            bezier
-            style={{
-              margin: 5,
-              borderRadius: 16,
-              stroke: "#ccc",
-              borderWidth: 1,
-              backgroundColor: "#fff",
-            }}
           />
         </ScrollView>
       </SafeAreaView>
