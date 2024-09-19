@@ -1,78 +1,65 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  Dimensions,
-  SafeAreaView,
-  ScrollView,
-  Image,
-} from "react-native";
+import React from 'react';
+import { SafeAreaView, StyleSheet, View } from 'react-native';
+import { BarChart, LineChart } from 'react-native-graph-kit';
 
-import {
-  LineChart,
-  BarChart,
-  PieChart,
-  ProgressChart,
-  ContributionGraph,
-  StackedBarChart,
-} from "react-native-chart-kit";
+const data = {
+  xAxis: {
+    labels: [
+      'Alice',
+      'Bob',
+      'Charlie',
+      'Liam',
+      'Mia',
+      'Nora',
+      'Oliver',
+      'Penelope',
+      'Quinn',
+      'Ryan',
+      'Sophia'
+    ]
+  },
+  yAxis: {
+    datasets: [120, 350, 400, 70, 87, 655, 10, 20, 400, 70, 87]
+  }
+};
 
-export default function App() {
-  const chartConfig = {
-    backgroundGradientFrom: "#1e2629",
-    backgroundGradientFromOpacity: 0,
-    backgroundGradientTo: "#ffffff",
-    backgroundGradientToOpacity: 0.5,
-    color: (opacity = 1) => `rgba(26, 147, 255, ${opacity})`,
-    strokeWidth: 2, // optional, default 3
-    barPercentage: 0.5,
-    useShadowColorFromDataset: false, // optional
-    propsForDots: {
-      r: "5",
-      strokeWidth: "2",
-      stroke: "#000",
-    },
-  };
-
-  const data = {
-    labels: ["January", "February", "March", "April", "May", "June"],
-    datasets: [
-      {
-        data: [20, 45, 28, 80, 99, 43],
-        color: (opacity = 1) => `rgba(65, 111, 244, ${opacity})`, // optional
-        strokeWidth: 2, // optional
-      },
-    ],
-    legend: ["Rainy Days"], // optional
-  };
-
-  return (
-    <View style={styles.container}>
-      <SafeAreaView style={styles.container}>
-        <ScrollView>
-          <Text style={styles.titulo}>Graficas</Text>
-
-          <LineChart
-            data={data}
-            width={380}
-            height={220}
-            chartConfig={chartConfig}
-          />
-        </ScrollView>
-      </SafeAreaView>
+const App = () => (
+  <SafeAreaView style={styles.screen}>
+    <View style={styles.chartContainer}>
+      <BarChart
+        chartData={data}
+        barWidth={30}
+        barGap={70}
+        horizontalGridLineColor={'grey'}
+        chartHeight={300}
+        yAxisMax={1000}
+      />
     </View>
-  );
-}
+    <View style={styles.chartContainer}>
+      <LineChart yAxisMax={1000} chartData={data} xAxisLength={70} initialDistance={30} />
+    </View>
+  </SafeAreaView>
+);
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
+    flex: 1
+  },
+  chartContainer: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  titulo: {
-    fontSize: 20,
-    textAlign: "center",
-  },
+    borderRadius: 10,
+    borderWidth: 0.5,
+    borderColor: 'lightgrey',
+    padding: 10,
+    margin: 10,
+    shadowColor: 'lightgrey',
+    shadowOpacity: 1,
+    backgroundColor: 'white',
+    shadowOffset: {
+      height: 6,
+      width: 5
+    }
+  }
 });
+
+export default App;
