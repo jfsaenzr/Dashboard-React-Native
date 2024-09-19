@@ -160,10 +160,11 @@ export default function App() {
         <Text
           style={{
             color: "#414141",
-            fontSize: 35,
+            fontSize: 30,
             fontWeight: "bold",
             marginBottom: 12,
             textAlign: "center",
+            textDecorationLine: "underline",
           }}
         >
           Gifted Charts
