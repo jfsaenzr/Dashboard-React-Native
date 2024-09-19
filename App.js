@@ -2,8 +2,6 @@ import {
   StyleSheet,
   Text,
   View,
-  Dimensions,
-  SafeAreaView,
   ScrollView,
   Image,
 } from "react-native";
@@ -124,7 +122,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <SafeAreaView style={styles.container}>
         <ScrollView>
           <Text style={styles.titulo}>Graficas</Text>
 
@@ -229,7 +226,7 @@ export default function App() {
             }}
           />
         </ScrollView>
-      </SafeAreaView>
+     
     </View>
   );
 }
