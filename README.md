@@ -1,4 +1,4 @@
-![React](https://github.com/user-attachments/assets/9b368fdb-04f2-4078-a076-d750210b5f4e)
+![React](https://github.com/user-attachments/assets/e33d851d-429f-468c-80c9-25e518d1c91b)
 
 ![Captura1](https://github.com/user-attachments/assets/e2cbbd44-dc19-4aa7-b20c-8d6c0a42a4ba)
 
