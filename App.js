@@ -363,7 +363,7 @@ export default function App() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    marginTop: 30,
+    marginTop: 5,
   },
   chartContainer: {
     flex: 1,
