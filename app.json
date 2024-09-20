@@ -22,7 +22,7 @@
       "package": "com.johansaenz.Dashboard"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.png"
     },
     "extra": {
       "eas": {
