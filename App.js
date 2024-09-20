@@ -175,7 +175,7 @@ export default function App() {
             style={{
               margin: -10,
               padding: 16,
-              borderRadius: 20,
+              borderRadius: 10,
               backgroundColor: "#232B5D",
             }}
           >
@@ -363,7 +363,6 @@ export default function App() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    marginTop: 5,
   },
   chartContainer: {
     flex: 1,
